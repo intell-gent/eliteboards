@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'boards#index'
+
+  resources :boards
+  resources :jobs
+  resources :categories
+  resources :users
+  resources :sessions
+  resources :subscriptions
 end
+# build out the files for migration of Sinatra app code, start migrating files over.
