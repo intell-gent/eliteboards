@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   root 'boards#index'
 
-  resources :boards
-  resources :jobs
+  resources :boards do
+    resources :jobs, except: :index
+  end
   resources :categories
-  resources :users
-  resources :sessions
-  resources :subscriptions
+
+  resources :users, only: [:show, :new, :create]
+  resources :sessions,  only: [:new, :create, :destroy]
+  resources :subscriptions,  only: [:new, :create, :destroy]
 end
-# build out the files for migration of Sinatra app code, start migrating files over.
