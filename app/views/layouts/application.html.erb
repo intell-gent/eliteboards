@@ -14,12 +14,12 @@
   <div class=".center">
     <h1>🏢 <a class="header-a" href="/">Welcome to Elite Boards</a> 🏢</h1>
     <nav class="top-nav">
-      <%= erb :'_nav_links' , :layout => false %>
+      <%= render 'layouts/nav_links'  %>
     </nav>
     <%= yield %>
   </div>
   <nav class="bottom-nav">
-    <%= erb :'_nav_links' , :layout => false %>
+    <%= render 'layouts/nav_links'  %>
   </nav>
 </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-    background: url("../images/corkboard.png") no-repeat center center fixed;
+    background: url("corkboard.png") no-repeat center center fixed;
     background-size: cover;
     padding: 1%;
     max-width: 1050px;
@@ -61,8 +61,8 @@ body {
     border-radius: 15px;
     max-width: 300px;
     color: white;
-    background: rgba(25, 25, 25, 0.6);;
-    display: inline-block;;
+    background: rgba(25, 25, 25, 0.6);
+    display: inline-block;
     padding: 20px;
     margin: 2% auto;
     list-style: none;
@@ -89,8 +89,7 @@ body {
     display: inline-block;
     vertical-align: top;
     font-family: 'Indie Flower', cursive;
-
-    background: url("../images/postynote.png") no-repeat center center;
+    background: url("postynote.png") no-repeat center center;
     background-size: 100% 95%;
     max-width: 250px;
     height: 275px;
@@ -102,7 +101,7 @@ body {
     vertical-align: top;
 
     font-family: 'Spectral', serif; /*standard text*/
-    background: url("../images/paper.jpg") no-repeat center center;
+    background: url("paper.jpg") no-repeat center center;
     background-size: 100% 100%;
     width: 90%;
     margin: 2.5%;
